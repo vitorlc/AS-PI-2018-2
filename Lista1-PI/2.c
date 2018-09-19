@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+/* 2. Escreva um programa em C que leia um número que servirá para controlar a
+quantidade de números pares que serão impressos a partir de 2. */
 
 int main() {
 	
