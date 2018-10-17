@@ -1,0 +1,21 @@
+1. Explique cada uma das operações aritméticas sobre ponteiros:
+
+a) p++;
+R:  incrementa o ponteiro, ou seja o endereço. Após esta instrução, o ponteiro p passará a apontar
+para a posição de memória imediatamente superior. Se em um vetor, o ponteiro passará a apontar a próxima posição do vetor.
+
+b) (*p)++;
+R: Incrementa o conteúdo apontado por p, ou seja, o valor armazenado na variável para qual p está apontando.
+
+c) *(p++);
+R: Incrementa p (como em p++) e acessa o valor encontrado na nova posição. Se em um vetor, esta expressão
+acessa o valor da posição imediatamente superior a armazenada em p antes do incremento.
+
+d) ++p;
+R: Utiliza o valor corrente de p na expressão e depois incrementa.
+
+e) ++(*p);
+R: Utiliza o valor do inteiro apontado por p na expressão e depois incrementa.
+
+f) *(++p);
+R: Utilizará o inteiro apontado por p na expressão e depois faz p apontar para o inteiro seguinte.
