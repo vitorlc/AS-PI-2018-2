@@ -1,0 +1,22 @@
+1. Escreva um trecho de código para fazer a criação dos novos tipos de dados conforme solicitado abaixo:
+a) Horário: composto de hora, minutos e segundos.
+b) Data: composto de dia, mês e ano.
+c) Compromisso: composto de uma data, horário e texto que descreve o compromisso.
+
+
+int main(void){
+	
+	struct horario{
+		int horas, minutos, segundos;
+	};
+	
+	struct data{
+		int dia, mes, ano;
+	};
+	
+	struct compromisso{
+		struct data esta_data;
+		struct horario este_horario;
+		char descricao[50];
+	};
+}
