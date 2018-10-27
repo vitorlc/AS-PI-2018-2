@@ -18,7 +18,7 @@ int main (void){
 	
 	Alunos a[1];
 	int i, posicao_maior_N1=0, posicao_menor_Media=0, posicao_maior_Media=0;
-	float maior_Media = 0.0, menor_Media = 0.0, sum_Media = 0.0, media_Geral_Final = 0.0, maior_N1 = 0.0;
+	float maior_Media = 0.0, menor_Media = 10, sum_Media = 0.0, media_Geral_Final = 0.0, maior_N1 = 0.0;
 	
 	for(i=0; i<3; i++) {
 	    strcpy(a[i].nome, "NULL");
@@ -51,14 +51,17 @@ int main (void){
 	for(i=0; i<3; i++){
 		
 		if (a[i].nota1 > maior_N1){
+			maior_N1=a[i].nota1;
 			posicao_maior_N1 = i;
 		}
 		
 		if (a[i].mediaNotas > maior_Media){
+			maior_Media=a[i].mediaNotas;
 			posicao_maior_Media = i;
 		}
 		
 		if (a[i].mediaNotas < menor_Media){
+			menor_Media=a[i].mediaNotas;
 			posicao_menor_Media = i;
 		}
 		
@@ -87,13 +90,11 @@ int main (void){
 	
 	printf("\n-----------MEDIAS DA TURMA-----------\n");
 	printf("Media Geral da Turma: %.2f", media_Geral_Final);
-	printf("\nMaior N1: %.2f do aluno: %s", media_Geral_Final, a[posicao_maior_N1].nome);
+	printf("\nMaior N1: %.2f do aluno: %s", maior_N1, a[posicao_maior_N1].nome);
 	printf("\nMaior Media Geral: %.2f do aluno: %s", maior_Media, a[posicao_maior_Media].nome);
-	
 	printf("\nMenor Media Geral: %.2f do aluno: %s", menor_Media, a[posicao_menor_Media].nome);
-	
-	
-	
+	printf("\n--------\n");
+		
 	system("pause");
 	return 0;
 }
