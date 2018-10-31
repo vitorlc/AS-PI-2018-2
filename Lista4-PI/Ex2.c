@@ -9,7 +9,7 @@ void main() {
 	float *ptr=NULL;
   	int i;
 	
-	ptr = arrayFloat;
+	ptr = &arrayFloat;
 	
 	for (i=0;i<=10;i++){	
 		printf("Endereco do ponteiro: %d  - Valor do ponteiro: %f\n", &ptr[i], ptr[i] );
